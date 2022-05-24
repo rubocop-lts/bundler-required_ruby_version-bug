@@ -10,9 +10,9 @@ _I will do one for current latest releases of bundler and ruby, and one for the 
 - HEADS @ [branch main](https://github.com/rubocop-lts/bundler-required_ruby_version-bug/tree/main)
 - current releases @ [branch current](https://github.com/rubocop-lts/bundler-required_ruby_version-bug/tree/current)
 
-# HEADS
+# CURRENT RELEASES
 
-This branch contains the ERROR REPORT for `ruby 3.2.0-preview1` + `bundler 2.4.0.dev (ruby setup.rb @ 20e9b96b9 Merge pull request #5560 from mame/support-disabled_message)`.
+This branch contains the ERROR REPORT for `ruby 3.1.2` + `bundler 2.3.14`.
 
 ---
 
@@ -82,61 +82,61 @@ NoMethodError: undefined method `name' for nil:NilClass
 
       msg = String.new(dep.name)
                   ^^^^^
-  /Users/pboling/.asdf/installs/ruby/3.2.0-preview1/lib/ruby/site_ruby/3.2.0+1/bundler/shared_helpers.rb:167:in `pretty_dependency'
-  /Users/pboling/.asdf/installs/ruby/3.2.0-preview1/lib/ruby/site_ruby/3.2.0+1/bundler/resolver.rb:396:in `block in version_conflict_message'
-  /Users/pboling/.asdf/installs/ruby/3.2.0-preview1/lib/ruby/site_ruby/3.2.0+1/bundler/vendor/molinillo/lib/molinillo/errors.rb:145:in `block in message_with_trees'
-  /Users/pboling/.asdf/installs/ruby/3.2.0-preview1/lib/ruby/site_ruby/3.2.0+1/bundler/vendor/molinillo/lib/molinillo/errors.rb:144:in `each'
-  /Users/pboling/.asdf/installs/ruby/3.2.0-preview1/lib/ruby/site_ruby/3.2.0+1/bundler/vendor/molinillo/lib/molinillo/errors.rb:144:in `reduce'
-  /Users/pboling/.asdf/installs/ruby/3.2.0-preview1/lib/ruby/site_ruby/3.2.0+1/bundler/vendor/molinillo/lib/molinillo/errors.rb:144:in `message_with_trees'
-  /Users/pboling/.asdf/installs/ruby/3.2.0-preview1/lib/ruby/site_ruby/3.2.0+1/bundler/resolver.rb:315:in `version_conflict_message'
-  /Users/pboling/.asdf/installs/ruby/3.2.0-preview1/lib/ruby/site_ruby/3.2.0+1/bundler/resolver.rb:56:in `rescue in start'
-  /Users/pboling/.asdf/installs/ruby/3.2.0-preview1/lib/ruby/site_ruby/3.2.0+1/bundler/resolver.rb:44:in `start'
-  /Users/pboling/.asdf/installs/ruby/3.2.0-preview1/lib/ruby/site_ruby/3.2.0+1/bundler/resolver.rb:23:in `resolve'
-  /Users/pboling/.asdf/installs/ruby/3.2.0-preview1/lib/ruby/site_ruby/3.2.0+1/bundler/definition.rb:270:in `resolve'
-  /Users/pboling/.asdf/installs/ruby/3.2.0-preview1/lib/ruby/site_ruby/3.2.0+1/bundler/definition.rb:181:in `resolve_remotely!'
-  /Users/pboling/.asdf/installs/ruby/3.2.0-preview1/lib/ruby/site_ruby/3.2.0+1/bundler/installer.rb:280:in `resolve_if_needed'
-  /Users/pboling/.asdf/installs/ruby/3.2.0-preview1/lib/ruby/site_ruby/3.2.0+1/bundler/installer.rb:82:in `block in run'
-  /Users/pboling/.asdf/installs/ruby/3.2.0-preview1/lib/ruby/site_ruby/3.2.0+1/bundler/process_lock.rb:12:in `block in lock'
-  /Users/pboling/.asdf/installs/ruby/3.2.0-preview1/lib/ruby/site_ruby/3.2.0+1/bundler/process_lock.rb:9:in `open'
-  /Users/pboling/.asdf/installs/ruby/3.2.0-preview1/lib/ruby/site_ruby/3.2.0+1/bundler/process_lock.rb:9:in `lock'
-  /Users/pboling/.asdf/installs/ruby/3.2.0-preview1/lib/ruby/site_ruby/3.2.0+1/bundler/installer.rb:71:in `run'
-  /Users/pboling/.asdf/installs/ruby/3.2.0-preview1/lib/ruby/site_ruby/3.2.0+1/bundler/installer.rb:23:in `install'
-  /Users/pboling/.asdf/installs/ruby/3.2.0-preview1/lib/ruby/site_ruby/3.2.0+1/bundler/cli/update.rb:78:in `run'
-  /Users/pboling/.asdf/installs/ruby/3.2.0-preview1/lib/ruby/site_ruby/3.2.0+1/bundler/cli.rb:303:in `block in update'
-  /Users/pboling/.asdf/installs/ruby/3.2.0-preview1/lib/ruby/site_ruby/3.2.0+1/bundler/settings.rb:131:in `temporary'
-  /Users/pboling/.asdf/installs/ruby/3.2.0-preview1/lib/ruby/site_ruby/3.2.0+1/bundler/cli.rb:302:in `update'
-  /Users/pboling/.asdf/installs/ruby/3.2.0-preview1/lib/ruby/site_ruby/3.2.0+1/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
-  /Users/pboling/.asdf/installs/ruby/3.2.0-preview1/lib/ruby/site_ruby/3.2.0+1/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
-  /Users/pboling/.asdf/installs/ruby/3.2.0-preview1/lib/ruby/site_ruby/3.2.0+1/bundler/vendor/thor/lib/thor.rb:392:in `dispatch'
-  /Users/pboling/.asdf/installs/ruby/3.2.0-preview1/lib/ruby/site_ruby/3.2.0+1/bundler/cli.rb:31:in `dispatch'
-  /Users/pboling/.asdf/installs/ruby/3.2.0-preview1/lib/ruby/site_ruby/3.2.0+1/bundler/vendor/thor/lib/thor/base.rb:485:in `start'
-  /Users/pboling/.asdf/installs/ruby/3.2.0-preview1/lib/ruby/site_ruby/3.2.0+1/bundler/cli.rb:25:in `start'
-  /Users/pboling/.asdf/installs/ruby/3.2.0-preview1/lib/ruby/gems/3.2.0+1/gems/bundler-2.4.0.dev/exe/bundle:48:in `block in <top (required)>'
-  /Users/pboling/.asdf/installs/ruby/3.2.0-preview1/lib/ruby/site_ruby/3.2.0+1/bundler/friendly_errors.rb:103:in `with_friendly_errors'
-  /Users/pboling/.asdf/installs/ruby/3.2.0-preview1/lib/ruby/gems/3.2.0+1/gems/bundler-2.4.0.dev/exe/bundle:36:in `<top (required)>'
-  /Users/pboling/.asdf/installs/ruby/3.2.0-preview1/bin/bundle:25:in `load'
-  /Users/pboling/.asdf/installs/ruby/3.2.0-preview1/bin/bundle:25:in `<main>'
+  /Users/pboling/.asdf/installs/ruby/3.1.2/lib/ruby/site_ruby/3.1.0/bundler/shared_helpers.rb:167:in `pretty_dependency'
+  /Users/pboling/.asdf/installs/ruby/3.1.2/lib/ruby/site_ruby/3.1.0/bundler/resolver.rb:396:in `block in version_conflict_message'
+  /Users/pboling/.asdf/installs/ruby/3.1.2/lib/ruby/site_ruby/3.1.0/bundler/vendor/molinillo/lib/molinillo/errors.rb:145:in `block in message_with_trees'
+  /Users/pboling/.asdf/installs/ruby/3.1.2/lib/ruby/site_ruby/3.1.0/bundler/vendor/molinillo/lib/molinillo/errors.rb:144:in `each'
+  /Users/pboling/.asdf/installs/ruby/3.1.2/lib/ruby/site_ruby/3.1.0/bundler/vendor/molinillo/lib/molinillo/errors.rb:144:in `reduce'
+  /Users/pboling/.asdf/installs/ruby/3.1.2/lib/ruby/site_ruby/3.1.0/bundler/vendor/molinillo/lib/molinillo/errors.rb:144:in `message_with_trees'
+  /Users/pboling/.asdf/installs/ruby/3.1.2/lib/ruby/site_ruby/3.1.0/bundler/resolver.rb:315:in `version_conflict_message'
+  /Users/pboling/.asdf/installs/ruby/3.1.2/lib/ruby/site_ruby/3.1.0/bundler/resolver.rb:56:in `rescue in start'
+  /Users/pboling/.asdf/installs/ruby/3.1.2/lib/ruby/site_ruby/3.1.0/bundler/resolver.rb:44:in `start'
+  /Users/pboling/.asdf/installs/ruby/3.1.2/lib/ruby/site_ruby/3.1.0/bundler/resolver.rb:23:in `resolve'
+  /Users/pboling/.asdf/installs/ruby/3.1.2/lib/ruby/site_ruby/3.1.0/bundler/definition.rb:270:in `resolve'
+  /Users/pboling/.asdf/installs/ruby/3.1.2/lib/ruby/site_ruby/3.1.0/bundler/definition.rb:181:in `resolve_remotely!'
+  /Users/pboling/.asdf/installs/ruby/3.1.2/lib/ruby/site_ruby/3.1.0/bundler/installer.rb:280:in `resolve_if_needed'
+  /Users/pboling/.asdf/installs/ruby/3.1.2/lib/ruby/site_ruby/3.1.0/bundler/installer.rb:82:in `block in run'
+  /Users/pboling/.asdf/installs/ruby/3.1.2/lib/ruby/site_ruby/3.1.0/bundler/process_lock.rb:12:in `block in lock'
+  /Users/pboling/.asdf/installs/ruby/3.1.2/lib/ruby/site_ruby/3.1.0/bundler/process_lock.rb:9:in `open'
+  /Users/pboling/.asdf/installs/ruby/3.1.2/lib/ruby/site_ruby/3.1.0/bundler/process_lock.rb:9:in `lock'
+  /Users/pboling/.asdf/installs/ruby/3.1.2/lib/ruby/site_ruby/3.1.0/bundler/installer.rb:71:in `run'
+  /Users/pboling/.asdf/installs/ruby/3.1.2/lib/ruby/site_ruby/3.1.0/bundler/installer.rb:23:in `install'
+  /Users/pboling/.asdf/installs/ruby/3.1.2/lib/ruby/site_ruby/3.1.0/bundler/cli/install.rb:62:in `run'
+  /Users/pboling/.asdf/installs/ruby/3.1.2/lib/ruby/site_ruby/3.1.0/bundler/cli.rb:255:in `block in install'
+  /Users/pboling/.asdf/installs/ruby/3.1.2/lib/ruby/site_ruby/3.1.0/bundler/settings.rb:131:in `temporary'
+  /Users/pboling/.asdf/installs/ruby/3.1.2/lib/ruby/site_ruby/3.1.0/bundler/cli.rb:254:in `install'
+  /Users/pboling/.asdf/installs/ruby/3.1.2/lib/ruby/site_ruby/3.1.0/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+  /Users/pboling/.asdf/installs/ruby/3.1.2/lib/ruby/site_ruby/3.1.0/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+  /Users/pboling/.asdf/installs/ruby/3.1.2/lib/ruby/site_ruby/3.1.0/bundler/vendor/thor/lib/thor.rb:392:in `dispatch'
+  /Users/pboling/.asdf/installs/ruby/3.1.2/lib/ruby/site_ruby/3.1.0/bundler/cli.rb:31:in `dispatch'
+  /Users/pboling/.asdf/installs/ruby/3.1.2/lib/ruby/site_ruby/3.1.0/bundler/vendor/thor/lib/thor/base.rb:485:in `start'
+  /Users/pboling/.asdf/installs/ruby/3.1.2/lib/ruby/site_ruby/3.1.0/bundler/cli.rb:25:in `start'
+  /Users/pboling/.asdf/installs/ruby/3.1.2/lib/ruby/gems/3.1.0/gems/bundler-2.3.14/exe/bundle:48:in `block in <top (required)>'
+  /Users/pboling/.asdf/installs/ruby/3.1.2/lib/ruby/site_ruby/3.1.0/bundler/friendly_errors.rb:103:in `with_friendly_errors'
+  /Users/pboling/.asdf/installs/ruby/3.1.2/lib/ruby/gems/3.1.0/gems/bundler-2.3.14/exe/bundle:36:in `<top (required)>'
+  /Users/pboling/.asdf/installs/ruby/3.1.2/bin/bundle:25:in `load'
+  /Users/pboling/.asdf/installs/ruby/3.1.2/bin/bundle:25:in `<main>'
 ```
 
 ## Environment
 
 ```
-Bundler       2.4.0.dev
+Bundler       2.3.14
   Platforms   ruby, arm64-darwin-21
-Ruby          3.2.0p-1 (2022-04-03 revision f801386f0c7051085da9d6ca660642f3aa08c81e) [arm64-darwin-21]
-  Full Path   /Users/pboling/.asdf/installs/ruby/3.2.0-preview1/bin/ruby
-  Config Dir  /Users/pboling/.asdf/installs/ruby/3.2.0-preview1/etc
-RubyGems      3.4.0.dev
-  Gem Home    /Users/pboling/.asdf/installs/ruby/3.2.0-preview1/lib/ruby/gems/3.2.0+1
-  Gem Path    /Users/pboling/.gem/ruby/3.2.0+1:/Users/pboling/.asdf/installs/ruby/3.2.0-preview1/lib/ruby/gems/3.2.0+1
+Ruby          3.1.2p20 (2022-04-12 revision 4491bb740a9506d76391ac44bb2fe6e483fec952) [arm64-darwin-21]
+  Full Path   /Users/pboling/.asdf/installs/ruby/3.1.2/bin/ruby
+  Config Dir  /Users/pboling/.asdf/installs/ruby/3.1.2/etc
+RubyGems      3.3.14
+  Gem Home    /Users/pboling/.asdf/installs/ruby/3.1.2/lib/ruby/gems/3.1.0
+  Gem Path    /Users/pboling/.gem/ruby/3.1.0:/Users/pboling/.asdf/installs/ruby/3.1.2/lib/ruby/gems/3.1.0
   User Home   /Users/pboling
-  User Path   /Users/pboling/.gem/ruby/3.2.0+1
-  Bin Dir     /Users/pboling/.asdf/installs/ruby/3.2.0-preview1/bin
+  User Path   /Users/pboling/.gem/ruby/3.1.0
+  Bin Dir     /Users/pboling/.asdf/installs/ruby/3.1.2/bin
 OpenSSL
-  Compiled    OpenSSL 3.0.2 15 Mar 2022
-  Loaded      OpenSSL 3.0.2 15 Mar 2022
-  Cert File   /Users/pboling/.asdf/installs/ruby/3.2.0-preview1/openssl/ssl/cert.pem
-  Cert Dir    /Users/pboling/.asdf/installs/ruby/3.2.0-preview1/openssl/ssl/certs
+  Compiled    OpenSSL 1.1.1n  15 Mar 2022
+  Loaded      OpenSSL 1.1.1n  15 Mar 2022
+  Cert File   /Users/pboling/.asdf/installs/ruby/3.1.2/openssl/ssl/cert.pem
+  Cert Dir    /Users/pboling/.asdf/installs/ruby/3.1.2/openssl/ssl/certs
 Tools
   Git         2.35.1
   RVM         not installed
@@ -147,9 +147,9 @@ Tools
 ## Bundler Build Metadata
 
 ```
-Built At          2022-05-24
-Git SHA           unknown
-Released Version  false
+Built At          2022-05-18
+Git SHA           467ad58a7c
+Released Version  true
 ```
 
 ## Bundler settings
@@ -196,7 +196,41 @@ gem "rspec", "~> 3.0"
 ### Gemfile.lock
 
 ```
-<No /Users/pboling/src/bugs/bundler-required_ruby_version-bug/Gemfile.lock found>
+PATH
+  remote: .
+  specs:
+    bundler-required_ruby_version-bug (0.1.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    diff-lcs (1.5.0)
+    rake (13.0.6)
+    rspec (3.11.0)
+      rspec-core (~> 3.11.0)
+      rspec-expectations (~> 3.11.0)
+      rspec-mocks (~> 3.11.0)
+    rspec-core (3.11.0)
+      rspec-support (~> 3.11.0)
+    rspec-expectations (3.11.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.11.0)
+    rspec-mocks (3.11.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.11.0)
+    rspec-support (3.11.0)
+
+PLATFORMS
+  arm64-darwin-21
+  java
+
+DEPENDENCIES
+  bundler-required_ruby_version-bug!
+  rake (~> 13.0)
+  rspec (~> 3.0)
+
+BUNDLED WITH
+   2.3.14
 ```
 
 ## Gemspecs
